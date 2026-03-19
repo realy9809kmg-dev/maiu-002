@@ -6,31 +6,32 @@
 <!-- / Fathom -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FreshCut Hair Studio</title>
+<title>Elite Hair Cut</title>
 
 <style>
+
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#f4f4f4;
+background:#f5f5f5;
 }
 
 header{
-background:#222;
+background:#111;
 color:white;
-padding:20px;
+padding:15px;
 text-align:center;
 }
 
 nav{
-background:#444;
+background:#333;
 padding:10px;
 text-align:center;
 }
 
 nav a{
 color:white;
-margin:0 15px;
+margin:15px;
 text-decoration:none;
 font-weight:bold;
 }
@@ -45,33 +46,58 @@ max-width:1000px;
 margin:auto;
 background:white;
 margin-top:20px;
-border-radius:8px;
+border-radius:5px;
 }
 
-h2{
-color:#333;
+.hero{
+text-align:center;
+padding:60px;
+background:#222;
+color:white;
 }
 
 .services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+display:flex;
 gap:20px;
+flex-wrap:wrap;
 }
 
 .service-box{
-background:#fafafa;
+flex:1;
+min-width:250px;
+background:#f1f1f1;
 padding:20px;
-border:1px solid #ddd;
-border-radius:6px;
+border-radius:5px;
 text-align:center;
 }
 
 footer{
-background:#222;
-color:white;
 text-align:center;
 padding:20px;
-margin-top:20px;
+background:#111;
+color:white;
+margin-top:30px;
+}
+
+form input, form textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+button{
+background:#000;
+color:white;
+padding:10px 20px;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:#444;
 }
 
 </style>
@@ -80,29 +106,21 @@ margin-top:20px;
 <body>
 
 <header>
-<h1>FreshCut Hair Studio</h1>
-<p>Professional Hair Cutting & Styling</p>
+<h1>Elite Hair Cut</h1>
+<p>Professional Barber & Hair Styling</p>
 </header>
 
 <nav>
 <a href="#home">Home</a>
-<a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#contact">Contact</a>
+<a href="#contact">Contact Us</a>
 <a href="#privacy">Privacy Policy</a>
 </nav>
 
-<section id="home">
-<h2>Welcome</h2>
-<p>Welcome to FreshCut Hair Studio. We provide professional hair cutting, styling, and grooming services for men, women, and kids. Our experienced stylists ensure you always leave looking your best.</p>
-</section>
-
-<section id="about">
-<h2>About Us</h2>
-<p>FreshCut Hair Studio has been serving customers with high-quality hair services. Our trained stylists follow the latest trends and techniques to give you the perfect look.</p>
-
-<p>We focus on customer satisfaction, hygiene, and modern styles.</p>
-</section>
+<div class="hero" id="home">
+<h2>Look Sharp. Feel Confident.</h2>
+<p>Premium Haircuts & Grooming for Men</p>
+</div>
 
 <section id="services">
 <h2>Our Services</h2>
@@ -110,62 +128,56 @@ margin-top:20px;
 <div class="services">
 
 <div class="service-box">
-<h3>Men Haircut</h3>
-<p>Modern and classic styles.</p>
+<h3>Hair Cut</h3>
+<p>Professional haircut tailored to your style.</p>
 </div>
 
 <div class="service-box">
-<h3>Women Haircut</h3>
-<p>Trendy and stylish cuts.</p>
-</div>
-
-<div class="service-box">
-<h3>Kids Haircut</h3>
-<p>Comfortable and safe styling.</p>
+<h3>Beard Trim</h3>
+<p>Perfect beard shaping and grooming.</p>
 </div>
 
 <div class="service-box">
 <h3>Hair Styling</h3>
-<p>Professional styling for events.</p>
+<p>Modern styling for every occasion.</p>
 </div>
 
 </div>
-
 </section>
 
 <section id="contact">
 <h2>Contact Us</h2>
 
-<p>Email: support@freshcutstudio.com</p>
-<p>Phone: +1 123 456 7890</p>
+<p>Email: support@elitehaircut.com</p>
+<p>Phone: +1 888 565 7645</p>
 <p>Address: 123 Barber Street, New York, USA</p>
+
+<h3>Send Us a Message</h3>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
 
 </section>
 
 <section id="privacy">
 <h2>Privacy Policy</h2>
 
-<p>At FreshCut Hair Studio, we value your privacy. This privacy policy explains how we collect, use, and protect your information.</p>
+<p>Your privacy is important to us. This website collects limited personal information such as your name and email when you contact us.</p>
 
-<h3>Information We Collect</h3>
-<p>We may collect basic information such as your name, email address, and phone number when you contact us or book services.</p>
+<p>We do not sell, trade, or share your personal information with third parties.</p>
 
-<h3>How We Use Your Information</h3>
-<p>Your information is used to provide services, improve our website, and communicate with you about appointments or promotions.</p>
+<p>The information collected is used only to respond to your inquiries and improve our services.</p>
 
-<h3>Information Protection</h3>
-<p>We implement appropriate security measures to protect your personal information.</p>
-
-<h3>Third-Party Services</h3>
-<p>We do not sell, trade, or transfer your personal information to outside parties unless required by law.</p>
-
-<h3>Contact</h3>
-<p>If you have any questions about this Privacy Policy, please contact us at support@freshcutstudio.com.</p>
+<p>By using our website, you agree to this privacy policy.</p>
 
 </section>
 
 <footer>
-<p>© 2026 FreshCut Hair Studio | All Rights Reserved</p>
+<p>© 2026 Elite Hair Cut. All Rights Reserved.</p>
 </footer>
 
 </body>
